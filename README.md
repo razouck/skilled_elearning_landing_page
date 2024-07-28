@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://your-solution-url.com)
-- [Live Site URL](https://your-live-site-url.com)
+- [Solution URL](https://github.com/razouck/skilled_elearning_landing_page)
+- [Live Site URL](https://razouck.github.io/skilled_elearning_landing_page/)
 
 ## My process
 
@@ -48,6 +48,6 @@ I learned how to use the picture element.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/razouck)
-- Github - [@yourusername](https://www.github.com/razouck)
-- Twitter - [@yourusername](https://www.twitter.com/razouck)
+- Frontend Mentor - [@razouck](https://www.frontendmentor.io/profile/razouck)
+- Github - [@razouck](https://www.github.com/razouck)
+- Twitter - [@razouck](https://www.twitter.com/razouck)
