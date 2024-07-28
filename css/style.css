@@ -1,0 +1,291 @@
+:root
+{
+	--space-cadet          : hsl(233, 54%, 16%);
+	--cool-gray            : hsl(232, 10%, 56%);
+	--french-rose          : hsl(341, 92%, 62%);
+	box-sizing             : border-box;
+}
+
+*
+{
+	margin                 : 0;
+	padding                : 0;
+	border                 : outline;
+	outline                : 0;
+	box-sizing             : inherit;
+}
+
+::selection
+{
+	color                  : white;
+	background-color       : var(--french-rose);
+}
+
+body
+{
+	font-size              : clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+	line-height            : 1.556;
+	font-family            : "Plus Jakarta Sans", sans-serif;
+	font-optical-sizing    : auto;
+	min-height             : 100vh;
+	min-height             : 100svh;
+	color                  : var(--space-cadet);
+	accent-color           : var(--french-rose);
+	background-image       : linear-gradient(0deg, hsl(236, 100%, 97%) 0%, hsl(0, 0%, 100%) 50%);
+}
+
+img
+{
+	inline-size            : 100%;
+}
+
+p
+{
+	color                  : var(--cool-gray);
+}
+
+header,
+main,
+footer
+{
+	padding-inline         : clamp(1rem, -2.279rem + 13.9906vw, 10.3125rem);
+}
+
+.logo
+{
+	display                : inline-block;
+	inline-size            : clamp(5.625rem, 5.1408rem + 2.0657vw, 7rem);
+	block-size             : clamp(1.4375rem, 1.3055rem + 0.5634vw, 1.8125rem);
+	background-size        : cover;
+
+	&.light
+	{
+		background-image   : url(../img/logo-light.svg);
+	}
+
+	&.dark
+	{
+		background-image   : url(../img/logo-dark.svg);
+	}
+}
+
+header > div:first-child
+{
+	padding-block-start    : clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+	margin-block-end       : clamp(2.375rem, -0.3759rem + 11.7371vw, 10.1875rem);
+}
+
+header > div:nth-child(2)
+{
+	max-width              : 30rem;
+
+	p
+	{
+		margin-block-start : 1.75rem;
+		margin-block-end   : clamp(1.5rem, 1.1479rem + 1.5023vw, 2.5rem);
+	}
+}
+
+header
+{
+	margin-block-end       : -0.9375rem;
+	position               : relative;
+	overflow-x             : clip;
+	overflow-clip-margin   : 0;
+
+	> picture
+	{
+		margin-inline      : auto;
+		pointer-events     : none;
+		user-select        : none;
+	}
+}
+
+@media only screen and (min-width: 768px)
+{
+	header
+	{
+		margin-block-end   : 0;
+		padding-block-end  : clamp(13.375rem, 10.5179rem + 5.9524vw, 15.875rem);
+	}
+
+	header > picture
+	{
+		position           : absolute;
+		margin-inline      : 0;
+		inset-block-start  : -148px;
+		inset-inline-end   : -335px;
+		z-index            : -1;
+	}
+
+	li
+	{
+		min-block-size     : clamp(21.1875rem, 20.4018rem + 1.6369vw, 21.875rem);
+	}
+}
+
+h1, h2, h3,
+.h-xl, .h-l, .h-m, .h-s
+{
+	font-weight            : 700;
+	text-wrap              : balance;
+}
+
+.h-xl
+{
+	font-size              : clamp(2.5rem, 2.1479rem + 1.5023vw, 3.5rem);
+	line-height            : 1.25;
+}
+
+.h-l
+{
+	font-size              : 40px;
+	line-height            : 1.275;
+}
+
+.h-m
+{
+	font-size              : clamp(1.5rem, 0.9286rem + 1.1905vw, 2rem);
+	line-height            : 1.25;
+}
+
+.h-s
+{
+	font-size              : clamp(1.25rem, 1.162rem + 0.3756vw, 1.5rem);
+	line-height            : 1.1667;
+}
+
+.button
+{
+	font                   : inherit;
+	font-weight            : 700;
+	display                : inline-block;
+	text-decoration        : none;
+	transition             : opacity 100ms ease-out;
+
+	&:hover
+	{
+		opacity            : 50%;
+	}
+
+	&.primary,
+	&.secondary
+	{
+		padding-block      : clamp(1rem, 0.956rem + 0.1878vw, 1.125rem);
+		padding-inline     : clamp(1.75rem, 1.662rem + 0.3756vw, 2rem);
+		color              : white;
+		border-radius      : clamp(1.75rem, 1.662rem + 0.3756vw, 2rem);
+	}
+
+	&.primary
+	{
+		background-color   : var(--french-rose);
+	}
+
+	&.secondary
+	{
+		background-color   : var(--space-cadet);
+	}
+
+	&.tertiary
+	{
+		color              : var(--french-rose);
+	}
+}
+
+ul
+{
+	--minimum              : 340px;
+	display                : grid;
+	grid-template-columns  : repeat(auto-fit, minmax(min(var(--minimum), 100%), 1fr));
+	gap                    : clamp(0.75rem, -0.5357rem + 2.6786vw, 1.875rem);
+	row-gap                : clamp(2.5rem, 1.0714rem + 2.9762vw, 3.75rem);
+}
+
+li
+{
+	display                : flex;
+	position               : relative;
+	padding-block          : clamp(2rem, 1.2958rem + 3.0047vw, 4rem);
+	padding-inline         : clamp(1.75rem, 1.662rem + 0.3756vw, 2rem);
+	flex-direction         : column;
+	gap                    : clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
+	background-color       : white;
+	border-radius          : 15px;
+	box-shadow             : 0px 25px 50px 0px rgba(6,22,141,0.0442);
+	list-style             : none;
+
+	> *:nth-last-child(2)
+	{
+		margin-block-end   : auto;
+	}
+
+	&::before
+	{
+		content            : "";
+		display            : block;
+		width              : 3.5rem;
+		height             : 3.5rem;
+		position           : absolute;
+		inset-block-start  : -1.75rem;
+		inset-inline-start : clamp(1.75rem, 1.662rem + 0.3756vw, 2rem);
+		border-radius      : 50%;
+		background-size    : cover;
+	}
+
+	&:nth-child(2)::before
+	{
+		background-image   : url(../img/icon-animation.svg);
+	}
+
+	&:nth-child(3)::before
+	{
+		background-image   : url(../img/icon-design.svg);
+	}
+
+	&:nth-child(4)::before
+	{
+		background-image   : url(../img/icon-photography.svg);
+	}
+
+	&:nth-child(5)::before
+	{
+		background-image   : url(../img/icon-crypto.svg);
+	}
+
+	&:nth-child(6)::before
+	{
+		background-image   : url(../img/icon-business.svg);
+	}
+}
+
+header > div:first-child,
+footer
+{
+	display                : flex;
+	justify-content        : space-between;
+	align-items            : center;
+}
+
+footer
+{
+	margin-block-start     : clamp(5rem, 4.2518rem + 3.1925vw, 7.125rem);
+	padding-block          : 2rem;
+	background-color       : var(--space-cadet);
+}
+
+.gradient-1,
+.gradient-2
+{
+	color                  : white;
+}
+
+.gradient-1
+{
+	background-image       : linear-gradient(0deg, hsla(13, 100%, 64%, 1) 0%, hsla(322, 87%, 55%, 1) 100%);
+}
+
+.gradient-2
+{
+	background-image       : linear-gradient(0deg, hsla(322, 87%, 55%, 1) 0%, hsla(237, 100%, 64%, 1) 100%);
+}
