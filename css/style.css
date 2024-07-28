@@ -206,8 +206,9 @@ li
 {
 	display                : flex;
 	position               : relative;
-	padding-block          : clamp(2rem, 1.2958rem + 3.0047vw, 4rem);
 	padding-inline         : clamp(1.75rem, 1.662rem + 0.3756vw, 2rem);
+	padding-block-start    : clamp(2rem, 1.2958rem + 3.0047vw, 4rem);
+	padding-block-end      : clamp(1.75rem, 1.4859rem + 1.1268vw, 2.5rem);
 	flex-direction         : column;
 	gap                    : clamp(1rem, 0.8239rem + 0.7512vw, 1.5rem);
 	background-color       : white;
