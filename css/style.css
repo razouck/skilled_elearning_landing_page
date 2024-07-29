@@ -283,7 +283,7 @@ footer
 
 .gradient-1
 {
-	background-image       : linear-gradient(0deg, hsla(13, 100%, 64%, 1) 0%, hsla(322, 87%, 55%, 1) 100%);
+	background-image       : linear-gradient(0deg, hsla(322, 87%, 55%, 1) 0%, hsla(13, 100%, 64%, 1) 100%);
 }
 
 .gradient-2
